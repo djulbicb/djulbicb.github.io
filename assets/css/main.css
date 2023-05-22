@@ -834,6 +834,9 @@ body {
     background: rgb(223,184,105);
     background: linear-gradient(45deg, rgba(223,184,105,1) 45%, rgba(219,226,130,1) 45%); 
 }
+.bg-diagonalBeige {
+    background: rgb(237, 237, 229);
+}
 .bg-tiles {
     background: url(../images/background/tiles.jpg);
     background-size: cover;
