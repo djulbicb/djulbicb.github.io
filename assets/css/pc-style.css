@@ -1,0 +1,393 @@
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+      /* If you want to implement it in very old browser-versions */
+      -webkit-user-select: none;
+      /* Chrome/Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+ */
+
+      /* The rule below is not implemented in browsers yet */
+      -o-user-select: none;
+
+      /* The rule below is implemented in most browsers by now */
+      user-select: none;
+
+  }
+
+  html,
+  body {
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+  }
+
+  .h33 {
+      height: 33%;
+  }
+
+  .h50 {
+      height: 50%;
+  }
+
+  .d-abs {
+      position: absolute;
+  }
+
+  .d-rel {
+      position: relative;
+  }
+
+  .wrapper {
+      width: 60%;
+      margin: auto;
+  }
+
+  .relative100 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+
+  .relative100 img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .scene-container {
+      height: 50vh;
+      width: 100%;
+      perspective: 3500px;
+      transform-style: preserve-3d;
+      transform: scale(0.9) translateX(-1em);
+      /*                transform: rotateX(-8.5deg) rotateY(-25.3deg);*/
+  }
+
+  #scene {
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+  }
+
+  .cube-container {
+      width: 10vh;
+      height: 10vh;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-style: preserve-3d;
+
+      bottom: 5vh;
+  }
+
+  .pc-support-case {
+      transform: scaleX(1) scaleY(0.5) scaleZ(1.5) translateX(26vh) translateY(5vh);
+  }
+
+  .cube-shadow {
+      width: 100vh;
+      height: 100vh;
+      transform-origin: bottom left;
+      transform: translateY(0vh) translateX(-45%) translateZ(50vh) rotateX(90deg);
+      background: rgb(255, 255, 255);
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 60%);
+      pointer-events: none;
+  }
+
+  /* GENERAL 3D:                                                  ;*/
+  /*****************************************************************/
+  .cube {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+  }
+
+.cube img {
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}
+
+  .cube-container figure {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      /*                 -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);*/
+  }
+
+  .front {
+      background-color: rgba(0, 128, 0, 0.6);
+      transform: scaleX(1.01)
+  }
+
+  .back {
+      background-color: rgba(0, 128, 0, 0.6);
+      transform: translateZ(-10vh) scalex(1.01);
+  }
+
+  .right {
+      transform-origin: top right;
+      transform: rotateY(-90deg) scaleX(1.02) translateX(1px);
+  }
+
+  .top {
+      background-color: #e7e0ce;
+      transform-origin: top left;
+      transform: rotateX(-90deg);
+  }
+
+  .right,
+  .left,
+  .front,
+  .back {
+      background: linear-gradient(180deg, rgb(224 216 199) 0%, rgb(197 185 166) 100%);
+  }
+
+  .left {
+      transform-origin: top left;
+      transform: rotateY(-90deg) translateX(-9.9vh) scaleX(1);
+  }
+
+  .bottom {
+      background-color: rgba(211, 245, 135, 0.76);
+      background-color: transparent;
+      transform-origin: top left;
+      transform: rotateX(-90deg) translateZ(10vh);
+  }
+
+  /* MAIN CASE:                                                    */
+  /*****************************************************************/
+  .pc-main-case {
+      transform: scaleX(4) scaleY(1) scaleZ(2);
+  }
+
+  .pc-main-case .left,
+  .pc-main-case .right {
+      background: linear-gradient(270deg, rgb(224 216 199) 0%, rgb(226 217 201) 100%);
+      border: 1px solid #e7e0ce;
+  }
+
+  /* SCREEN CASE:                                                  */
+  /*****************************************************************/
+  .screen {
+      background-color: gray;
+      position: absolute;
+      left: 2%;
+      top: 3%;
+      width: 96%;
+      height: 95%;
+  }
+
+  .pc-screen-case {
+      bottom: 23vh;
+      transform: scaleX(3.5) scaleY(2.5) scaleZ(2.5) translateZ(0vh);
+  }
+
+  .pc-screen-case .left {
+      background: transparent;
+      transform: rotateY(-95deg) translateX(-10vh);
+  }
+
+  .pc-screen-case .right {
+      background: transparent;
+      transform-origin: top right;
+      transform: rotateY(-85deg);
+      right: 0;
+  }
+
+  .pc-screen-case .top {
+      transform: rotateX(-85deg);
+      background-color: transparent;
+  }
+
+  .pc-screen-case .back {
+      transform-origin: bottom right;
+      transform: translateZ(-10vh) translateX(-0.84vh) scaleX(0.83) scaleY(0.92);
+  }
+
+  .pc-screen-case .front {
+      background-color: #dcd5c5;
+  }
+
+  .pc-screen-case .back {
+      background-color: #dcd5c5;
+  }
+
+  .screen-code-line {
+      background-color: #f0932b;
+      height: 3px;
+      position: absolute;
+      border-radius: 2px;
+      top: 100%;
+      left: 10%;
+      width: 60%;
+      animation: code-line-animation 3s infinite linear;
+      opacity: 0;
+  }
+
+  @keyframes code-line-animation {
+      0% {
+          top: 100%;
+          opacity: 0;
+      }
+
+      14% {
+          top: 100%;
+          opacity: 0;
+      }
+
+      15% {
+          top: 70%;
+          opacity: 0;
+      }
+
+      28% {
+          top: 70%;
+          opacity: 1;
+      }
+
+      29% {
+          top: 60%;
+      }
+
+      42% {
+          top: 60%;
+      }
+
+      43% {
+          top: 50%;
+      }
+
+      56% {
+          top: 50%;
+      }
+
+      57% {
+          top: 40%;
+      }
+
+      68% {
+          top: 40%;
+      }
+
+      69% {
+          top: 27%;
+      }
+
+      80% {
+          top: 27%;
+      }
+
+      81% {
+          top: 15%;
+      }
+
+      100% {
+          top: 15%;
+          opacity: ;
+      }
+
+  }
+
+
+  /* KEYBOARD:                                                    ;*/
+  /*****************************************************************/
+  .pc-keybord {
+      transform-style: preserve-3d;
+      transform: scaleX(4) scaleY(0.35) scaleZ(2) translateX(-5vh) translateZ(7vh) translateY(11vh) rotateY(-90deg) skewY(20deg);
+  }
+
+  .pc-keybord .front,
+  .pc-keybord .back {
+      background: transparent;
+  }
+
+  .pc-keybord .right {
+      transform: rotateY(-90deg) scaleY(0.6);
+  }
+
+  .pc-keybord .cube .top {
+      transform: rotateX(90deg) rotateZ(270deg);
+      background-color: #e7e0ce;
+  }
+
+  .buttons-row {
+      width: 100%;
+  }
+
+  .buttons-row:nth-child(2) {
+      bottom: 0;
+  }
+
+  .keyboard-top-above-row,
+  .keyboard-top-below-row {
+      background-color: #383c40;
+      position: absolute;
+      padding: 1%;
+  }
+
+  .keyboard-top-above-row {
+      width: 50%;
+      height: 20%;
+      left: 50%;
+      top: 5%;
+      transform: translateX(-50%);
+  }
+
+  .keyboard-top-below-row {
+      width: 90%;
+      height: 60%;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+  }
+
+  .keyboard-btn {
+      animation: color-animation 3s infinite linear alternate;
+      transition: 0.3s;
+      outline: 1px solid black;
+  }
+
+  .keyboard-top-above-row .keyboard-btn {
+      height: 100%;
+      width: 19%;
+      margin-right: 1%;
+      background-color: #bbb;
+      float: left;
+  }
+
+  .keyboard-top-below-row .keyboard-btn {
+      height: 100%;
+      width: 16.65%;
+      background-color: #bbb;
+      float: left;
+  }
+
+  .keyboard-btn:hover {
+      background-color: #f0932b !important;
+  }
+
+  .keyboard-top-below-row .row:nth-child(2) {
+      top: 50%;
+  }
+
+  @keyframes color-animation {
+      0% {
+          background: #bbb;
+      }
+
+      80% {
+          background: #bbb;
+      }
+
+      100% {
+          background: yellow;
+      }
+  }

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ===============================================================
+    ==== HEAD                                 
+    ================================================================ -->
+
+    <title>Bojan Djulbic | Java Developer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="I am a Java Developer with a background in 3D Design. This is my portfolio website where I share games and apps I like creating in my free time. My main motivation to advance in career and in studies is to create structures that are functional, modular and sustainable. Main field of my work is Java and Mysql. However, I am also familiar with other technologies such as C#, MSQL, HTML, CSS, JS, JQuery.">
+    <meta name="keywords" content="java,javaFX,serbia,bojan,djulbic,developer,software,game,games,3d,architecture,design,visualisation,pancevo,beograd">
+    <meta name="author" content="Bojan Djulbic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================================
+    ====  Google tag manager                                     
+    ================================================================ -->
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WL67FWC');
+
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- ===============================================================
+    ====   Google analitic                                      
+    ================================================================ -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72180578-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-72180578-1');
+
+    </script>
+
+    <!-- ===============================================================
+    ====   FONT                                  
+    ================================================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+
+    <!-- ===============================================================
+    ====    IMPORT LIBRARY                                              
+    ================================================================ -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/dist/css/jquery.fullPage.css" />
+
+    <link rel="stylesheet" href="./assets/css/pc-style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <style>
+        .block-mouse-events {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #section0 {
+            background-color: black !important;
+        }
+
+    </style>
+
+
+    <!-- JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="assets/dist/js/scrolloverflow.js"></script>
+    <script src="assets/dist/js/jquery.fullPage.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+            });
+        });
+
+    </script>
+</head>
+
+<body style="visibility: hidden;">
+    <!-- ===============================================================
+    ====     Google Tag Manager                                            
+    ================================================================ -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL67FWC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div id="fullpage">
+
+        <!-- ===============================================================
+        ====     Section 0: Cover
+        ================================================================ -->
+        <div class="section " id="section0">
+           
+           
+           
+            <div class="background-command-container">
+                <div class="wrapper">
+                    <ul class="background-command">
+
+                    </ul>
+                </div>
+            </div>
+<!--        <div class="mouse-event-catcher"></div>-->
+            <div class="cover-card-pc">
+               
+                <div class="wrapper">
+                    <div class="scene-container">
+                        <div id="scene" style="transform: rotateX(-8.3deg) rotateY(-30deg);">
+                            <div class="cube-container pc-main-case">
+                                <div class="cube">
+                                    <figure class="front">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-main-front" draggable="false" src="assets/images/pc/pc-main-front.jpg">
+                                        </div>
+                                    </figure>
+                                    <figure class="back">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-main-back" draggable="false" src="assets/images/pc/pc-main-back.jpg">
+                                        </div>
+                                    </figure>
+                                    <figure class="right">
+
+                                    </figure>
+                                    <figure class="left">
+
+                                    </figure>
+                                    <figure class="top">
+
+                                    </figure>
+                                    <figure class="bottom">
+
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="cube-container pc-screen-case">
+                                <div class="cube">
+                                    <figure class="front">
+                                        <div class="relative100">
+                                            <div class="screen">
+                                                <div class="relative100">
+                                                    <div class="screen-code-line"></div>
+                                                    <div class="screen-code-line"></div>
+                                                    <div class="screen-code-line"></div>
+                                                    <div class="screen-code-line"></div>
+                                                    <div class="screen-code-line"></div>
+                                                    <div class="block-mouse-events"></div>
+                                                    <img alt="pc-screen" draggable="false" src="assets/images/pc/pc-screen.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                    <figure class="back">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-screen-case-back" draggable="false" src="assets/images/pc/pc-screen-case-back.jpg">
+                                        </div>
+                                    </figure>
+                                    <figure class="right">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-screen-case-side" draggable="false" src="assets/images/pc/pc-screen-case-side.png">
+                                        </div>
+                                    </figure>
+                                    <figure class="left">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-screen-case-side" draggable="false" src="assets/images/pc/pc-screen-case-side.png">
+                                        </div>
+                                    </figure>
+                                    <figure class="top">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-screen-case-top" draggable="false" src="assets/images/pc/pc-screen-case-top.png">
+                                        </div>
+                                    </figure>
+
+                                </div>
+                            </div>
+
+                            <div class="cube-container pc-keybord">
+                                <div class="cube">
+                                    <figure class="front">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-keyboard-side" draggable="false" src="assets/images/pc/pc-keyboard-side.png">
+                                        </div>
+                                    </figure>
+                                    <figure class="back">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-keyboard-side" draggable="false" src="assets/images/pc/pc-keyboard-side.png">
+                                        </div>
+                                    </figure>
+                                    <figure class="right">
+                                        <div class="block-mouse-events"></div>
+
+                                    </figure>
+                                    <figure class="left">
+                                        <div class="block-mouse-events"></div>
+
+                                    </figure>
+                                    <figure class="top">
+                                        <div class="relative100">
+                                            <div class="keyboard-top-above-row">
+                                                <div class="relative100">
+                                                    <div class="keyboard-btn"></div>
+                                                    <div class="keyboard-btn"></div>
+                                                    <div class="keyboard-btn"></div>
+                                                    <div class="keyboard-btn"></div>
+                                                    <div class="keyboard-btn"></div>
+                                                </div>
+                                            </div>
+                                            <div class="keyboard-top-below-row">
+                                                <div class="relative100">
+                                                    <div class="buttons-row h50 d-abs">
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                    </div>
+                                                    <div class="buttons-row h50 d-abs">
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                        <div class="keyboard-btn"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </figure>
+                                    <figure class="bottom">
+
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="cube-container pc-support-case">
+                                <div class="cube">
+                                    <figure class="front">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-support-case-front" draggable="false" src="assets/images/pc/pc-support-case-front.jpg">
+                                        </div>
+                                    </figure>
+                                    <figure class="back">
+
+                                    </figure>
+                                    <figure class="right">
+
+                                    </figure>
+                                    <figure class="left">
+
+                                    </figure>
+                                    <figure class="top">
+                                        <div class="relative100">
+                                            <div class="block-mouse-events"></div>
+                                            <img alt="pc-support-case-top" draggable="false" src="assets/images/pc/pc-support-case-top.jpg">
+                                        </div>
+                                    </figure>
+                                    <figure class="bottom">
+
+
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="cube-container cube-shadow">
+                                <div class="cube">
+                                    <figure class="bottom">
+                                        <div class="relative100">
+
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cover-card-info">
+                <h1>Bojan Djulbic</h1>
+                <h2 class="red-line">Java & React developer</h2>
+                <p>Creative Java/React developer with a background in 3D design</p>
+                <a target="_blank" href="about-me.html" class="btn text-light btn-resume">About me</a>
+            </div>
+
+            <div class="cover-footer">
+                <div class="container">
+                    <a target="_blank" href="https://www.linkedin.com/in/djulbicb/" class="btn btn-link text-light btn-cover-link"><i class="fab fa-linkedin mr-1"></i>Linkedin</a>
+                    <a target="_blank" href="https://github.com/djulbicb" class="btn btn-link text-light btn-cover-link"><i class="fab fa-github mr-1"></i>Github</a>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+        <!-- ===============================================================
+        ====     Section 1: Recent Projects     
+        ================================================================ -->
+        <div class="section fp-auto-height" id="section1">
+            <div class="container">
+
+                <h2 class="green-line mt-1">Recent projects</h2>
+                <div class="row mb-3">
+
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="card text-dark">
+                            <div class="row no-gutters">
+                                <div class="col col-4">
+                                    <div class="img-wrap-center bg-concrete">
+                                        <img class="card-img" src="assets/images/icons/gameBoard.png" alt="Card image cap">
+                                    </div>
+                                </div>
+                                <div class="col col-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fun arithmetics</h5>
+                                        <p class="card-title-sub hide-xs">Php, React</p>
+                                        <p class="card-text show-lg">Practice arithmetics in this fun app. Pick a level of difficulty and app will generate an expression for you to solve. Input a result and app will check if the solution is good. App done with PHP and React.</p>
+                                        <p class="card-text show-xs">
+                                            Practice arithmetics in this fun app
+                                        </p>
+
+                                        <div class="btn-row">
+                                            <a class="btn btn-outline-primary" href="http://www.bojandjulbic.com/assets/games/game_fun_arithmetics/">Play online</a>
+                                            <a class="btn btn-outline-primary" href="https://github.com/djulbicb/game_fun_arithmetics">Visit github</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card text-dark">
+                            <div class="row no-gutters">
+                                <div class="col col-4">
+                                    <div class="img-wrap-center bg-linesLight">
+                                        <!--                                        <img class="card-img" src="assets/images/articles-square/data_factory.jpg" alt="Card image cap">-->
+                                        <img class="card-img" src="assets/images/icons/dataFactory.png" alt="Card image cap">
+                                    </div>
+                                </div>
+                                <div class="col col-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Data Library + Data Factory</h5>
+                                        <p class="card-title-sub  hide-xs">Java, API, Docker</p>
+                                        <p class="card-text show-lg">Java Library and web service. Specify what kind of response you want and DataFactory will create data and the fake API service for all CRUD functions. </p>
+                                        <p class="card-text show-xs">
+                                            Create Mock Api rest service
+                                        </p>
+                                        <div class="btn-row">
+                                            <a class="btn btn-outline-primary" href="https://github.com/djulbicb/DataFactory">DataFactory <span class="hide-xs">Github</span></a>
+                                            <a class="btn btn-outline-primary" href="https://github.com/djulbicb/DataLibrary">DataLibrary <span class="hide-xs">Github</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card text-dark">
+                            <div class="row no-gutters">
+                                <div class="col col-4">
+                                    <div class="img-wrap-center bg-diagonalGreenOrange">
+                                        <!--                                        <img class="card-img" src="assets/images/articles-square/workshop.jpg" alt="Card image cap">-->
+                                        <img class="card-img" src="assets/images/icons/laptop.png" alt="Card image cap">
+                                    </div>
+                                </div>
+                                <div class="col col-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spring Boot Workshop</h5>
+                                        <p class="card-title-sub hide-xs">A lot of tech :)</p>
+                                        <p class="card-text show-lg">Held a spring boot workshop that focused on microservice architecture and multiple project structure</p>
+                                        <p class="card-text show-xs">
+                                            Lead a spring boot workshop
+                                        </p>
+                                        <div class="btn-row">
+                                            <a class="btn btn-outline-primary" href="https://github.com/djulbicb/spring-boot-training-bookstore">Workshop <span class="hide-xs">Github</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ===============================================================
+        ====     Section 2:  JavaFX Games    
+        ================================================================ -->
+        <div class="section fp-auto-height" id="section2">
+            <div class="container">
+
+                <h2 class="orange-line">JavaFX games</h2>
+                <div class="row mb-3">
+
+                    <div class="col-12 col-md-2 hide-xs">
+                        <div class="card">
+                            <div class="img-wrapper bg-tiles">
+                                <img class="" src="assets/images/icons/puzzleSlider.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Puzzle Slider</h5>
+                                <p class="card-title-sub hide-xs">Php, React</p>
+                                <p class="card-text  show-lg">Slide the puzzle piece by piece to reveal an image. Many images and difficulties are available. Relax, enjoy and find out why this was favorite past time for every 90's adventure gamer.</p>
+                                <p class="card-text show-xs">
+                                    Slide the puzzle piece by piece to reveal an image. Every adventurer loves it.
+                                </p>
+                                <div class="btn-row">
+                                    <a class="btn btn-outline-primary" href="assets/games/PuzzleSlider.rar">Download</a>
+                                    <a class="btn btn-outline-primary" href="https://youtu.be/qY_EUc-XSus">View gameplay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <div class="card">
+                            <div class="img-wrapper bg-city-ancient">
+                                <img class=" card-img-top" src="assets/images/icons/AncientMemoryCards.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Ancient Memory Cards</h5>
+                                <p class="card-title-sub hide-xs">Php, React</p>
+                                <p class="card-text   show-lg">Do you know how Ancient Romans ruled all known world for sooo long. It is because they had good memory. Practice your memory on ancient scrolls with memory cards just like Romans did.</p>
+                                <p class="card-text show-xs">
+                                    Practice your memory with memory cards like Ancient Romans.
+                                </p>
+
+                                <div class="btn-row">
+                                    <a class="btn btn-outline-primary" href="assets/games/AncientMemoryCards.rar">Download</a>
+                                    <a class="btn btn-outline-primary" href="https://youtu.be/1TPF-fIS0y44">View gameplay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="card">
+                            <div class="img-wrapper bg-space">
+                                <img class=" card-img-top" src="assets/images/icons/battleshipSpace.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Battleship Space</h5>
+                                <p class="card-title-sub hide-xs">Php, React</p>
+                                <p class="card-text  show-lg">Do you like sinking battleships game? Than you will love sinking battleships in SPA-AAA-CE. Defeat alien invading AI before your galaxy is lost. Multiple field sizes and AI difficulties available.</p>
+                                <p class="card-text show-xs">
+                                    Sink space battleships in SPAA-CEEE
+                                </p>
+
+                                <div class="btn-row">
+                                    <a class="btn btn-outline-primary" href="assets/games/BattleshipSpace.rar">Download</a>
+                                    <a class="btn btn-outline-primary" href="https://youtu.be/eEkBnE-GW4I">View gameplay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 hide-xs">
+                        <div class="card">
+                            <div class="img-wrapper bg-puzzle">
+                                <img class="card-img-top" src="assets/images/icons/puzzleSolver.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Puzzle Solver</h5>
+                                <p class="card-title-sub hide-xs">Php, React</p>
+                                <p class="card-text show-lg">Searching for the best puzzle to solve on your computer with a glass a wine in your hand near a crackling fireplace. Look no further, many themes and difficulties available.</p>
+
+                                <p class="card-text show-xs">
+                                    Solve the puzzles iwth a glass of wine
+                                </p>
+
+                                <div class="btn-row">
+                                    <a class="btn btn-outline-primary" href="assets/games/PuzzleSolver.rar">Download</a>
+                                    <a class="btn btn-outline-primary" href="https://youtu.be/jDsYb6_yaFs">View gameplay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 show-xs">
+                        <div class="card">
+                            <div class="card-body text-dark text-center">
+                                <div class="btn-row">
+                                    <a class="btn btn-outline-primary" href="stuff-software.html">
+                                        Click to see more <i class="fas fa-angle-double-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===============================================================
+        ====    Section: Footer
+        ================================================================ -->
+
+        <div class="section section-footer fp-auto-height" id="section4">
+            <!-- ============= FOOTER: Start ============= -->
+            <footer class="footer-bs">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 footer-brand animated fadeInLeft">
+                            <h2>About me:</h2>
+                            <p>Creative Java/React developer with 2+ years of designing and developing client/server web applications and 4+ years in 3D design and architecture. I blend analytical, problem solving skills with innovative design to create modular and functional software stuctures.</p>
+                        </div>
+                        <div class="col-6 col-md-3 footer-nav animated fadeInUp">
+                            <h4>Menu —</h4>
+                            <ul class="pages">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-me.html">About me</a></li>
+                                <li><a href="stuff-software.html">Projects</a></li>
+                                <li><a href="stuff-3D.html">3D Renderings</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3 footer-nav animated fadeInUp">
+                            <h4>Social —</h4>
+                            <ul class="pages">
+                                <li><a href="https://github.com/djulbicb">Github</a></li>
+                                <li><a href="https://www.linkedin.com/in/djulbicb/">Linkedin</a></li>
+                                <li><a href="https://www.youtube.com/user/najoboj">Youtube</a></li>
+                                <li><a href="https://www.imdb.com/name/nm5923994/">Imdb</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- ============= FOOTER: End ============= -->
+
+        </div>
+    </div>
+
+
+    <script src="./assets/js/pc-style.js"></script>
+
+    <script>
+        // Helper function
+        let domReady = (cb) => {
+            document.readyState === 'interactive' || document.readyState === 'complete' ?
+                cb() :
+                document.addEventListener('DOMContentLoaded', cb);
+        };
+
+        domReady(() => {
+            // Display body when DOM is loaded
+            document.body.style.visibility = 'visible';
+        });
+
+    </script>
+</body>
+
+</html>
