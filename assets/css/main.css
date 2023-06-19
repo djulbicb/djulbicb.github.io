@@ -845,6 +845,10 @@ body {
         background: url(../images/background/city-ancient.jpg);
     background-size: cover;
 }
+.bg-maze {
+        background: url(../images/background/maze.png);
+    background-size: cover;
+}
 
 .bg-space {
             background: url(../images/background/space.jpg);
